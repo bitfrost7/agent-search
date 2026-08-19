@@ -1,0 +1,9 @@
+{
+  "channel": "bilibili",
+  "raw": "{\"code\":0,\"data\":{\"result\":[{\"result_type\":\"video\",\"data\":[{\"title\":\"测试视频\",\"bvid\":\"BV1xx411c7mD\",\"description\":\"测试描述\",\"author\":\"UP主\",\"play\":1000}]}]}}",
+  "expectedCount": 1,
+  "expectedFields": {
+    "title": "测试视频"
+  },
+  "note": "formatResults now correctly parses complete JSON from cookie_fetch/api strategy."
+}

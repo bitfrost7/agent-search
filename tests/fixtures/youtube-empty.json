@@ -1,0 +1,8 @@
+{
+  "channel": "youtube",
+  "raw": "",
+  "rawType": "string",
+  "expectedCount": 0,
+  "expectedError": false,
+  "note": "Empty yt-dlp output returns empty array, not pseudo-error"
+}

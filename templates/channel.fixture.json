@@ -1,0 +1,11 @@
+{
+  "channel": "template",
+  "raw": "[{\"title\":\"Example result\",\"url\":\"https://example.com/1\",\"description\":\"This is an example\"}]",
+  "rawType": "string",
+  "query": "example query",
+  "expectedCount": 1,
+  "expectedFields": {
+    "title": "Example result"
+  },
+  "note": "字段格式与 tests/fixtures/fixture-parser.test.ts 的 Fixture 接口一致:channel/raw/rawType/query/expectedCount/expectedFields"
+}

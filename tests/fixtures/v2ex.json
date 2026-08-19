@@ -1,0 +1,10 @@
+{
+  "channel": "v2ex",
+  "raw": "[{\"id\":1,\"title\":\"测试主题\",\"url\":\"https://v2ex.com/t/1\",\"content\":\"内容\",\"replies\":10,\"member\":{\"username\":\"user1\"},\"node\":{\"title\":\"节点\"}}]",
+  "rawType": "object",
+  "expectedCount": 1,
+  "expectedFields": {
+    "title": "测试主题",
+    "url": "https://v2ex.com/t/1"
+  }
+}

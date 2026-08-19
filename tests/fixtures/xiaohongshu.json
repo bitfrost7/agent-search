@@ -1,0 +1,10 @@
+{
+  "channel": "xiaohongshu",
+  "raw": "[{\"title\":\"露营攻略\",\"desc\":\"新手露营指南\",\"url\":\"https://www.xiaohongshu.com/explore/abc123\",\"author\":\"露营达人\",\"likes\":\"500\"}]",
+  "rawType": "string",
+  "expectedCount": 1,
+  "expectedFields": {
+    "title": "露营攻略"
+  },
+  "note": "opencli xiaohongshu search --format json returns JSON array"
+}

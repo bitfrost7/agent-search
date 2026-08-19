@@ -1,0 +1,10 @@
+{
+  "channel": "youtube",
+  "raw": "{\"title\":\"React Hooks Tutorial | 2026\",\"url\":\"https://www.youtube.com/watch?v=dummy1\",\"duration\":600}\n{\"title\":\"Vue 3 Intro\",\"url\":\"https://www.youtube.com/watch?v=dummy2\",\"duration\":300}",
+  "rawType": "string",
+  "expectedCount": 2,
+  "expectedFields": {
+    "title": "React Hooks Tutorial | 2026"
+  },
+  "note": "yt-dlp --flat-playlist --print-json 每行一个 JSON 对象(标题含 | 不再解析错位)"
+}

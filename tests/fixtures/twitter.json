@@ -1,0 +1,10 @@
+{
+  "channel": "twitter",
+  "raw": "[{\"text\":\"AI agents are the future\",\"author\":\"sama\",\"url\":\"https://x.com/sama/status/123\",\"likes\":\"1.2K\",\"retweets\":\"500\"}]",
+  "rawType": "string",
+  "expectedCount": 1,
+  "expectedFields": {
+    "title": "AI agents are the future"
+  },
+  "note": "opencli twitter search --format json returns JSON array"
+}

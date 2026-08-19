@@ -1,0 +1,11 @@
+node_modules/
+dist/
+
+# Hermes skill — not part of the npm package
+skills/
+
+# Internal channels — UCloud-specific, not for public use
+src/channels/internal/
+
+# Internal e2e tests — UCloud-specific, not for public use
+tests/e2e/internal.test.ts

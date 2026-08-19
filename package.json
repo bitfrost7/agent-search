@@ -1,0 +1,56 @@
+{
+  "name": "agent-search",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Unified multi-channel search CLI — search GitHub, YouTube, Bilibili, Twitter, and more from your terminal",
+  "bin": {
+    "agent-search": "./bin/agent-search.js"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "scripts/",
+    "templates/",
+    "docs/channel-development.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "node scripts/clean-dist.mjs",
+    "build": "npm run clean && tsc && tsc -p tsconfig.internal.json",
+    "build:public": "npm run clean && tsc",
+    "dev": "tsx src/cli.ts",
+    "dev:mcp": "tsx src/mcp.ts",
+    "start": "node bin/agent-search.js",
+    "doctor": "node bin/agent-search.js doctor",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.internal.json --noEmit",
+    "test": "vitest run --exclude tests/e2e",
+    "test:contract": "vitest run tests/contract",
+    "test:e2e": "vitest run tests/e2e/public.test.ts",
+    "test:all": "vitest run",
+    "new-channel": "node scripts/new-channel.mjs",
+    "prepack": "npm run build:public"
+  },
+  "dependencies": {
+    "@jackwener/opencli": "^1.8.4",
+    "remark-slate": "^1.8.6",
+    "trustasia-ones-mcp": "^1.1.6",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.0",
+    "@types/turndown": "^5.0.6",
+    "prettier": "^3.5.0",
+    "tsx": "^4.19.0",
+    "typebox": "^1.3.11",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.9"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

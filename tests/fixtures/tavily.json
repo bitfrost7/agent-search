@@ -1,0 +1,12 @@
+{
+  "channel": "tavily",
+  "raw": "{\"results\":[{\"title\":\"Codebase Memory\",\"content\":\"A semantic code search tool\",\"url\":\"https://example.com/codebase-memory\"}]}",
+  "rawType": "string",
+  "query": "codebase memory",
+  "backend": "tavily",
+  "expectedCount": 1,
+  "expectedFields": {
+    "title": "Codebase Memory"
+  },
+  "note": "Tavily search API response."
+}

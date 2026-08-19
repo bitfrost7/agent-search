@@ -1,0 +1,8 @@
+{
+  "channel": "twitter",
+  "raw": "not json at all",
+  "rawType": "string",
+  "expectedCount": 0,
+  "expectedError": false,
+  "note": "Non-JSON CLI output returns empty, not raw text stuffed into result"
+}
